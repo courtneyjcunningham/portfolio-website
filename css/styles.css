@@ -146,6 +146,7 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .enjoy {
@@ -223,11 +224,33 @@ td {
   .grid {
     grid-template-columns: 1fr;
   }
+  div.profile {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  div.profile {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+  }
+
+  .mountain-photo {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .welcome-text {
+    text-align: justify;
   }
 }
 
@@ -260,9 +283,16 @@ td {
   }
 }
 
+.mountain-photo {
+  display: block;
+  margin: auto;
+  image-orientation: center;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 
 /* Keeping this code for reference -
 
@@ -302,8 +332,3 @@ td {
   }
 }
 */
-
-.mountain-photo {
-  display: block;
-  margin: auto;
-}
