@@ -230,6 +230,13 @@ td {
     text-align: center;
     width: 300px;
   }
+
+  .main-navigation {
+    position: absolute;
+    left: 0;
+    width: auto;
+    margin-top: 80px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
